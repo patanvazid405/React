@@ -6,15 +6,29 @@ import Vaz from './Laptop.jsx'
 import GPT from './components/Toss.jsx'
 import {Swiggy} from './components/Swiggy.jsx'
 import {Order_fruits, Unordered_fruits} from"./components/fruits.jsx"
+import Counter from './components/Counter.jsx'
+// index.js or App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from"./components/navbar.jsx";
+import Corocels from './components/Corocels.jsx'
+
+
+
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Swiggy/>
-    <GPT/>
+    <Navbar/>
+    <Corocels/>
+    {/* <Swiggy/> */}
+    {/*<GPT/>
     <App/>
-    <Vaz/>
-    <Swiggy/>
-    <Order_fruits/>
-    <Unordered_fruits/>
+    <Vaz/> */}
+    {/* <Swiggy/> */}
+    {/* <Order_fruits/>
+    <Unordered_fruits/> */}
+
+    <Counter/>
   </StrictMode>,
 )
