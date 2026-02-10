@@ -11,16 +11,16 @@ import Counter from './components/Counter.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from"./components/navbar.jsx";
 import Corocels from './components/Corocels.jsx'
-
-
-
-
+import Spinner from './components/Spinner.jsx'
+import Products from './components/Fetch.jsx'
+import CounterApp from './components/FunctionCounter.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar/>
     <Corocels/>
+    <Products/>
     {/* <Swiggy/> */}
     {/*<GPT/>
     <App/>
@@ -28,7 +28,8 @@ createRoot(document.getElementById('root')).render(
     {/* <Swiggy/> */}
     {/* <Order_fruits/>
     <Unordered_fruits/> */}
-
+    
     <Counter/>
+    <CounterApp/>
   </StrictMode>,
 )

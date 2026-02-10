@@ -10,6 +10,14 @@ class Counter extends React.Component{
     Decrement =()=>{
         this.setState({count:this.state.count-1})
     }
+
+    shouldComponentUpdate(){
+        return true
+    }
+
+    getSnapshotBeforeUpdate(a,b){
+        console.log(a,b)
+    }
     
     render(){
         return(
