@@ -14,22 +14,30 @@ import Corocels from './components/Corocels.jsx'
 import Spinner from './components/Spinner.jsx'
 import Products from './components/Fetch.jsx'
 import CounterApp from './components/FunctionCounter.jsx'
+import Prod from './components/useEffect.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Navbar/>
+  <>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+    </Routes>
+  </BrowserRouter>
+    {/* <Navbar/>
     <Corocels/>
-    <Products/>
+    <Products/> */}
+    {/* <Prod/> */}
     {/* <Swiggy/> */}
     {/*<GPT/>
     <App/>
     <Vaz/> */}
     {/* <Swiggy/> */}
-    {/* <Order_fruits/>
-    <Unordered_fruits/> */}
+    {/* <Order_fruits n={["apple","banana","orange","mango"]}/>
+    <Unordered_fruits n={["apple","banana","orange","mango"]}/>
     
     <Counter/>
-    <CounterApp/>
-  </StrictMode>,
+    <CounterApp/> */}
+  </>
 )
