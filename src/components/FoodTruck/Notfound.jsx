@@ -1,0 +1,9 @@
+function NotFound(){
+    return(
+        <>
+        <img src="https://cdn.dribbble.com/userupload/25439422/file/original-af9c309401b13edcd50861b6196ac9ee.gif" alt="" srcset="" />
+        </>
+    )
+}
+
+return NotFound

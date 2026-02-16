@@ -1,29 +1,26 @@
 import React from "react"
 
-function Items(){
+function Items({ arr }){
     return(
         <React.Fragment>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Water Melon</li>
-            <li>Grape</li>
+            {arr?.map((e, i)=><li key={i}>{e}</li>)}
         </React.Fragment>
     )
 }
 
 
-export function Order_fruits(){
+export function Order_fruits({ n }){
     return(
         <ul>
-            <Items/>
+            <Items arr={n}/>
         </ul>
     )
 }
 
-export function Unordered_fruits(){
+export function Unordered_fruits({ n }){
     return(
         <ol>
-            <Items/>
+            <Items arr={n}/>
         </ol>
     )
 }
@@ -33,7 +30,7 @@ let arr = ["vazid","patan","niteesh","teja","rajesh"]
 export function List_render(){
     return(
         <React.Fragment>
-        {arr.map(e=><li>{e}</li>)}   
+        {arr.map((e, i)=><li key={i}>{e}</li>)}   
         </React.Fragment>
     )
 }

@@ -29,8 +29,8 @@ class Products extends React.Component{
             <>
                 {/* <button onClick={this.getProduct}>Get data</button> */}
                 {this.state.recipes.length>0 ? 
-                    <div style={{display:"flex",flexWrap:"wrap",margin:"20px"}}>
-                        {this.state.recipes.map(e=><img key={e.id} src={e.image} style={{margin:"10px"}} width={"200px"} ></img>)} 
+                    <div style={{display:"flex",flexWrap:"wrap",margin:"20px", width:"100%"}}>
+                        {this.state.recipes.map(e=><img key={e.id} src={e.image} style={{margin:"10px"}} width={"230px"} ></img>)} 
                     </div>
                 : <Spinners/>}
             </>
